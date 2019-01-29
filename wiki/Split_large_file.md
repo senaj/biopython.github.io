@@ -45,7 +45,7 @@ def batch_iterator(iterator, batch_size):
         batch = []
         while len(batch) < batch_size:
             try:
-                entry = iterator.next()
+                entry = iterator.next() 
             except StopIteration:
                 entry = None
             if entry is None:
